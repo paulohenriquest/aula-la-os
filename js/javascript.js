@@ -57,11 +57,11 @@
 // for (numero = 0; numero <= 10; numero++){
 //     console.log(numero);
 // }
-let resultado = document.getElementById('tabuada');
-for(let numero = 1; numero <= 10; numero=numero+1){
-    for(let multiplica = 0; multiplica <= 10; multiplica=multiplica+1){
-        let multiplicacao = numero * multiplica;
-        let linha = "" + numero + " * " + multiplica + " = " + multiplicacao + "<br>";
-        resultado.innerHTML += (linha);
-    }
-}
+// let resultado = document.getElementById('tabuada');
+// for(let numero = 1; numero <= 10; numero=numero+1){
+//     for(let multiplica = 0; multiplica <= 10; multiplica=multiplica+1){
+//         let multiplicacao = numero * multiplica;
+//         let linha = "" + numero + " * " + multiplica + " = " + multiplicacao + "<br>";
+//         resultado.innerHTML += (linha);
+//     }
+// }

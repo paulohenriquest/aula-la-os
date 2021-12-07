@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação</title>
+</head>
+<body id="fundo">
+    <div class="corpo">
+        <h1> Teste </h1>
+        <button type="submit" id="enviar" onclick="testar()">Testar</button>
+    </div>
+    <script> 
+        function testar(){
+            let aviso = prompt(' Quanto você recebe hoje? \n \n 1 - Entre R$ 0,00 e R$ 1000,00 \n 2 - Entre R$1200,00 e R$ 2500,00 \n 3 - Entre R$ 2600,00 e R$ 4000,00 \n 4 - Entre R$ 4100,00 ou mais. ');
+            let fundo = document.getElementById('fundo');
+            console.log(aviso);
+            // if(aviso == 1){
+            //     fundo.style.background = 'red';
+            // }else if(aviso == 2){
+            //     fundo.style.background = 'blue';
+            // }else if(aviso == 3){
+            //     fundo.style.background = 'pink';
+            // }else if(aviso == 4){
+            //     fundo.style.background = 'white';
+            // }else{
+            //     fundo.style.background = 'green';
+            //     fundo.innerHTML = ('inválido')
+            // }
+
+            switch(aviso){
+                case '1':
+                    fundo.style.background = 'red';
+                break;
+
+                case '2':
+                    fundo.style.background = 'blue';
+                break;
+
+                case '3':
+                    fundo.style.background = 'pink';
+                break;
+
+                case '4':
+                    fundo.style.background = 'orange';
+                break;
+
+                default:
+                fundo.style.background = 'black';
+                fundo.innerHTML = 'inválido';
+                fundo.style.color = 'white';
+                break;
+            }
+
+
+        }
+    </script>
+</body>
+</html>
